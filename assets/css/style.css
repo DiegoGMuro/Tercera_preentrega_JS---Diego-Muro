@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: linear-gradient(43deg, #a2ca8b 0%, #3cd415 46%, #033603 100%);
+    background-image: linear-gradient(43deg, #fdf906 0%, #e0b012 46%, #f05710 100%);
+    min-height: 100vh;
+}
+
+.color_letra{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-top: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+    text-align: center;  
+    
+}
+
+h2{
+    margin-left: 100px;
+}
+
+.color_letra .h1{
+    padding: 10px;
+    letter-spacing: .5vh ;
+    color: darkred ;
+}
+
+.color_letra .h2{
+    padding: 10px;
+    letter-spacing: 1vh ;
+}
+
+.pie{
+    padding: 20px;
+    padding-top: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    text-align: center;  
+    
+}
+
+h3{
+    padding-top: 10px;
+}
+
+
+.widget1__img {
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+    padding: 10px;
+    width: 25vh;   /* 60 */
+    height: 20vh;  /* 45 */
+    border-radius: 20px;
+
+}
+
+.contenido{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-evenly; /*center */ 
+    align-content: center;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 20px;
+    background-color:grey;
+    box-shadow: 5px 5px 10px black;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .contenido {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        text-align: center;
+        
+    }
+    .widget1__img{
+    width: 40vh;   /* 60 */
+    height:30vh;  /* 45 */
+    padding: 0px;
+    margin: 10px;
+    
+    }
+}
+
+.alinear{
+    text-align: center;
+    color: #033603;
+    font-style: oblique;
+    text-decoration: underline;
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.prediodesde{
+    padding: 0;
+    white-space: nowrap;
+    color: #999;
+    font-size: 15px;
+    
+}
+.ciudad{
+    font-size: 24px;
+    line-height: 1em;
+    color: darkblue;
+}
+.increm{
+    color: darkred;
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: 3px
+}
+.description{
+    
+    color: whitesmoke;
+    margin-top: 12px;
+    max-height: 2.6em;
+    overflow: hidden;
+    font-size: 11px;
+}
+
+h1 {
+    text-align: center;
+    animation: agrandar 2s ease-in-out infinite;
+    color: blue;
+}
+
+@keyframes agrandar {
+    0% {
+        font-size: 24px;
+    }
+
+    50% {
+        font-size: 28px;
+    }
+
+    100% {
+        font-size: 24px;
+    }
+}
+
+
+
+/*------ TABLA-----------------------------------------------------*/
+
+
+#tabla-cotizaciones {
+    color: blue;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    /* centra la tabla horizontalmente */
+    width: 80%;
+    /* establece un ancho del 80% */
+    border: 2px solid #333;
+    /* borde de 2px de grosor de color negro */
+    border-radius: 10px;
+    /* bordes redondeados de 10px */
+    padding: 10px;
+    /* añade un espacio interior de 10px */
+    box-shadow: 5px 5px 5px #888;
+    /* añade una sombra */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    /* centra el texto horizontalmente */
+}
+
+td,
+th {
+    border: 1px solid #333;
+    padding: 8px;
+}
