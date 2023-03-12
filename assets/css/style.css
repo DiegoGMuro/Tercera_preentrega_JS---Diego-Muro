@@ -185,3 +185,47 @@ th {
     border: 1px solid #333;
     padding: 8px;
 }
+
+
+/*------------------------------------------------------------------------------------*/
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    /* Estilos para encabezado */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    th {
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        display: block;
+    }
+
+    /* Estilos para filas */
+    td {
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        display: block;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* Estilos para la primera celda de cada fila */
+    td:first-of-type {
+        text-align: left;
+        font-weight: bold;
+    }
+}
