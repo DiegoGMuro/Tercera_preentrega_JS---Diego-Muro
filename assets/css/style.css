@@ -3,24 +3,19 @@
     padding: 0;
 }
 
-body{
-    background-color: linear-gradient(43deg, #a2ca8b 0%, #3cd415 46%, #033603 100%);
-    background-image: linear-gradient(43deg, #fdf906 0%, #e0b012 46%, #f05710 100%);
-    min-height: 100vh;
-}
-
 .color_letra{
     padding-top: 50px;
     padding-bottom: 30px;
     margin-top: auto;
     font-family: Arial, Helvetica, sans-serif;
-    color: azure;
+    color: rgb(57, 129, 129);
     text-align: center;  
     
 }
 
-h2{
+.alinear_destino{
     margin-left: 100px;
+    
 }
 
 .color_letra .h1{
@@ -38,7 +33,7 @@ h2{
     padding: 20px;
     padding-top: 150px;
     font-family: Arial, Helvetica, sans-serif;
-    color: darkslategray;
+    color: rgb(57, 129, 129);
     text-align: center;  
     
 }
@@ -69,13 +64,12 @@ h3{
     margin: 10px auto;
     border-radius: 10px;
     padding: 20px;
-    background-color:grey;
+    background-color:rgb(133, 202, 43);
     box-shadow: 5px 5px 10px black;
     text-align: center;
     font-weight: bold;
 
 }
-
 
 @media only screen and (max-width: 768px) {
     .contenido {
@@ -96,7 +90,7 @@ h3{
 
 .alinear{
     text-align: center;
-    color: #033603;
+    color: #2cb62c;
     font-style: oblique;
     text-decoration: underline;
     font-size: larger;
@@ -134,7 +128,7 @@ h3{
 h1 {
     text-align: center;
     animation: agrandar 2s ease-in-out infinite;
-    color: blue;
+    color: darkblue;
 }
 
 @keyframes agrandar {
@@ -151,7 +145,141 @@ h1 {
     }
 }
 
+/*------ HEADER-----------------------------------------------------*/
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #fff;*/
+    background-color: gray;
+    padding: 25px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 9vh;
+    height: 9vh;
+    margin-right: 20px;
+}
+
+
+.titulo {
+    font-size: 24px;
+}
+
+.modo-oscuro button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*------ MODO OSCURO-----------------------------------------------------*/
+/*
+body{
+    background-color: linear-gradient(43deg, #a2ca8b 0%, #3cd415 46%, #033603 100%);
+    background-image: linear-gradient(43deg, #b7ccd1 0%, #86afca 46%, #6fc6db 100%);
+    min-height: 100vh;
+}*/
+
+body {
+    background-color: bisque;
+    color: #333;
+    min-height: 100vh;
+}
+
+.dark-mode {
+    background-color: black;
+    color: #fff;
+}
+
+#modo {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#modo:hover {
+    background-color: #3e8e41;
+    transform: translateY(-2px);
+}
+
+#modo:active {
+    background-color: #1e4023;
+    transform: translateY(0px);
+}
+
+/*
+.dark-mode #modo::before {
+    content: "Cambiar a modo claro";
+}
+
+:not(.dark-mode) #modo::before {
+    content: "Cambiar a modo oscuro";
+}
+*/
+
+/*-----------------------Leer mas leer menos -----------------------------*/
+
+.textoLogin {
+    color: blue;
+    font-family: cursive;
+    font-weight: bold;
+
+}
+
+.botonLeerMas {
+    background-color: darkgreen;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 30px;
+    font-size: 12px;
+    box-shadow: 0px 0px 10px 0px #4caf50;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.botonLeerMas:hover {
+    box-shadow: none;
+    background-color: darkblue;
+    color: #fff;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
+}
+
+.esconderTexto {
+    display: none;
+}
+
+.showText {
+    display: block;
+}
+
+p {
+    /*text-align: center;*/
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.centrado {
+    text-align: center;
+}
 
 /*------ TABLA-----------------------------------------------------*/
 
@@ -186,8 +314,6 @@ th {
     padding: 8px;
 }
 
-
-/*------------------------------------------------------------------------------------*/
 
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
@@ -229,3 +355,4 @@ th {
         font-weight: bold;
     }
 }
+

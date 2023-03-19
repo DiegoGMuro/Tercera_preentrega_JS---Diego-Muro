@@ -30,24 +30,41 @@ function calcularIncrementoDias(dias) {
 }
 
 // Función para calcular el precio total de un viaje
-function calcularPrecioViaje(destino, pasajeros, dias) {
+/* function calcularPrecioViaje(destino, pasajeros, dias) {
     const precioBase = destinos.find(element => element.ciudad.toUpperCase() === destino).precioBase;
     const incrementoDias = calcularIncrementoDias(dias);
     const precioTotal = precioBase * pasajeros * (1 + incrementoDias);
     return precioTotal;
-}
+} */
+
+function calcularPrecioViaje(destino, pasajeros, dias) {
+    if (!Number.isInteger(pasajeros) || !Number.isInteger(dias)) {
+    return "La cantidad de pasajeros y los días de estancia deben ser números enteros";
+    }
+    const precioBase = destinos.find(element => element.ciudad.toUpperCase() === destino).precioBase;
+    const incrementoDias = calcularIncrementoDias(dias);
+    const precioTotal = precioBase * pasajeros * (1 + incrementoDias);
+    return precioTotal;
+    }
+
+
+
 
 // Función para validar la edad del usuario
 function validarEdad(anioNacimiento) {
     const anioActual = new Date().getFullYear();
+    if (anioNacimiento > anioActual) {
+    alert(`El año de nacimiento ingresado no puede ser posterior al año actual.`);
+    return false;
+    }
     const edad = anioActual - anioNacimiento;
     if (edad < 18) {
-        alert(`Lo siento, tienes ${edad} años, debes ser mayor de 18 años para poder cotizar un viaje.`);
-        return false;
+    alert(`Lo siento, tienes ${edad} años, debes ser mayor de 18 años para poder cotizar un viaje.`);
+    return false;
     } else {
-        return true;
+    return true;
     }
-}
+    }
 
 // Recorremos el array de destinos con un bucle FOR OF y lo informamos al usuario al inicio:
 let mensaje = 'Ciudades Disponibles:\n\n';
