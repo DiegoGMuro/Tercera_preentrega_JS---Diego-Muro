@@ -1,5 +1,4 @@
 
-
 let botonLeerMas = document.getElementById('botonLeerMas');
 let esconderTexto = document.getElementById('esconderTexto');
 
@@ -7,9 +6,9 @@ let esconderTexto = document.getElementById('esconderTexto');
 botonLeerMas.addEventListener('click', alternarTexto);
 
 function alternarTexto() {
-    esconderTexto.classList.toggle('showText');
+    esconderTexto.classList.toggle('mostrarTexto');
 
-    if (esconderTexto.classList.contains('showText')) {
+    if (esconderTexto.classList.contains('mostrarTexto')) {
         botonLeerMas.innerHTML = 'Leer menos'
     }
     else {

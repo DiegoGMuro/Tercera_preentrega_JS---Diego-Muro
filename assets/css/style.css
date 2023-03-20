@@ -1,74 +1,71 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.color_letra{
-    padding-top: 50px;
-    padding-bottom: 30px;
+.color_letra {
+    padding-top: 180px;
+    padding-bottom: 10px;
     margin-top: auto;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(57, 129, 129);
-    text-align: center;  
-    
+    text-align: center;
 }
 
-.alinear_destino{
+.alinear_destino {
     margin-left: 100px;
-    
 }
 
-.color_letra .h1{
+.color_letra .h1 {
     padding: 10px;
-    letter-spacing: .5vh ;
-    color: darkred ;
+    letter-spacing: .5vh;
+    color: darkred;
 }
 
-.color_letra .h2{
+.color_letra .h2 {
     padding: 10px;
-    letter-spacing: 1vh ;
+    letter-spacing: 1vh;
 }
 
-.pie{
+.pie {
     padding: 20px;
     padding-top: 150px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(57, 129, 129);
-    text-align: center;  
-    
+    text-align: center;
 }
 
-h3{
+h3 {
     padding-top: 10px;
 }
-
 
 .widget1__img {
     border-radius: 20px;
     box-shadow: 5px 5px 10px black;
     padding: 10px;
-    width: 25vh;   /* 60 */
-    height: 20vh;  /* 45 */
+    width: 25vh;
+    /* 60 */
+    height: 20vh;
+    /* 45 */
     border-radius: 20px;
-
 }
 
-.contenido{
+.contenido {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
-    justify-content: space-evenly; /*center */ 
+    justify-content: space-evenly;
+    /*center */
     align-content: center;
     width: 90%;
     margin: 10px auto;
     border-radius: 10px;
     padding: 20px;
-    background-color:rgb(133, 202, 43);
+    background-color: rgb(133, 202, 43);
     box-shadow: 5px 5px 10px black;
     text-align: center;
     font-weight: bold;
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -77,18 +74,18 @@ h3{
         grid-template-columns: repeat(1, 1fr);
         gap: 40px;
         text-align: center;
-        
+
     }
-    .widget1__img{
-    width: 40vh;   /* 60 */
-    height:30vh;  /* 45 */
-    padding: 0px;
-    margin: 10px;
-    
+
+    .widget1__img {
+        width: 40vh;
+        height: 30vh;
+        padding: 0px;
+        margin: 10px;
     }
 }
 
-.alinear{
+.alinear {
     text-align: center;
     color: #2cb62c;
     font-style: oblique;
@@ -98,26 +95,29 @@ h3{
     margin-left: 50px;
 }
 
-.prediodesde{
+.prediodesde {
     padding: 0;
     white-space: nowrap;
     color: #999;
     font-size: 15px;
-    
+
 }
-.ciudad{
+
+.ciudad {
     font-size: 24px;
     line-height: 1em;
     color: darkblue;
 }
-.increm{
+
+.increm {
     color: darkred;
     display: inline-block;
     font-size: 12px;
     vertical-align: 3px
 }
-.description{
-    
+
+.description {
+
     color: whitesmoke;
     margin-top: 12px;
     max-height: 2.6em;
@@ -127,23 +127,9 @@ h3{
 
 h1 {
     text-align: center;
-    animation: agrandar 2s ease-in-out infinite;
     color: darkblue;
 }
 
-@keyframes agrandar {
-    0% {
-        font-size: 24px;
-    }
-
-    50% {
-        font-size: 28px;
-    }
-
-    100% {
-        font-size: 24px;
-    }
-}
 
 /*------ HEADER-----------------------------------------------------*/
 
@@ -151,7 +137,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*background-color: #fff;*/
     background-color: gray;
     padding: 25px;
 }
@@ -168,7 +153,6 @@ header {
     margin-right: 20px;
 }
 
-
 .titulo {
     font-size: 24px;
 }
@@ -183,12 +167,6 @@ header {
 }
 
 /*------ MODO OSCURO-----------------------------------------------------*/
-/*
-body{
-    background-color: linear-gradient(43deg, #a2ca8b 0%, #3cd415 46%, #033603 100%);
-    background-image: linear-gradient(43deg, #b7ccd1 0%, #86afca 46%, #6fc6db 100%);
-    min-height: 100vh;
-}*/
 
 body {
     background-color: bisque;
@@ -196,7 +174,7 @@ body {
     min-height: 100vh;
 }
 
-.dark-mode {
+.modoOscuro {
     background-color: black;
     color: #fff;
 }
@@ -222,15 +200,6 @@ body {
     transform: translateY(0px);
 }
 
-/*
-.dark-mode #modo::before {
-    content: "Cambiar a modo claro";
-}
-
-:not(.dark-mode) #modo::before {
-    content: "Cambiar a modo oscuro";
-}
-*/
 
 /*-----------------------Leer mas leer menos -----------------------------*/
 
@@ -238,7 +207,6 @@ body {
     color: blue;
     font-family: cursive;
     font-weight: bold;
-
 }
 
 .botonLeerMas {
@@ -265,12 +233,11 @@ body {
     display: none;
 }
 
-.showText {
+.mostrarTexto {
     display: block;
 }
 
 p {
-    /*text-align: center;*/
     text-align: justify;
     text-justify: inter-word;
     margin-left: 20px;
@@ -281,78 +248,144 @@ p {
     text-align: center;
 }
 
-/*------ TABLA-----------------------------------------------------*/
 
+/*----------FORMULARIO--------------------------------------------*/
 
-#tabla-cotizaciones {
-    color: blue;
-    background-color: antiquewhite;
-    margin: 0 auto;
-    /* centra la tabla horizontalmente */
-    width: 80%;
-    /* establece un ancho del 80% */
-    border: 2px solid #333;
-    /* borde de 2px de grosor de color negro */
-    border-radius: 10px;
-    /* bordes redondeados de 10px */
+#formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 15vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+label {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+select {
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="number"] {
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 50px;
+}
+
+button {
+    margin-top: 20px;
     padding: 10px;
-    /* añade un espacio interior de 10px */
-    box-shadow: 5px 5px 5px #888;
-    /* añade una sombra */
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#carrito {
+    margin-top: 50px;
+    font-weight: bold;
 }
 
 table {
     border-collapse: collapse;
-    width: 100%;
-    text-align: center;
-    /* centra el texto horizontalmente */
+    margin-top: 20px;
 }
 
-td,
+th,
+td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
 th {
-    border: 1px solid #333;
-    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+#carrito table {
+    margin: 0 auto;
 }
 
 
-/* Estilos para dispositivos móviles */
-@media only screen and (max-width: 600px) {
-    table,
-    thead,
-    tbody,
-    th,
-    td,
-    tr {
-        display: block;
-    }
+/*------------------------------PASSWORDS-----------------------------------------------------------*/
 
-    /* Estilos para encabezado */
-    thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
+#resultado,
+#psw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 10px;
 
-    th {
-        text-align: center;
-        padding: 10px;
-        width: 100%;
-        display: block;
-    }
+}
 
-    /* Estilos para filas */
-    td {
-        text-align: center;
-        padding: 10px;
-        width: 100%;
-        display: block;
-        border-bottom: 1px solid #eee;
-    }
+#resultado {
+    font-size: 24px;
+    color: orange;
+}
 
-    /* Estilos para la primera celda de cada fila */
-    td:first-of-type {
-        text-align: left;
-        font-weight: bold;
-    }
+#psw label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#psw input[type="password"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70px;
+
+}
+
+#psw button[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+#psw button[type="submit"]:hover {
+    background-color: #0062cc;
+}
+
+#mensaje {
+    margin-top: 10px;
+    font-size: 16px;
+    color: orange;
+    text-align: center;
 }
 
