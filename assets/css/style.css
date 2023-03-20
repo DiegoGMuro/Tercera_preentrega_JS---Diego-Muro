@@ -166,6 +166,39 @@ header {
     cursor: pointer;
 }
 
+/*------ FOOTER-----------------------------------------------------*/
+
+img:hover {
+    background-color: yellow;
+}
+
+footer {
+    background: linear-gradient(to right, rgb(146, 145, 144), rgb(59, 58, 58));
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+footer a {
+    margin: 10px;
+    display: inline;
+}
+
+.links {
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.contenedor--footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /*------ MODO OSCURO-----------------------------------------------------*/
 
 body {
@@ -294,7 +327,7 @@ input[type="number"] {
 
 button {
     margin-top: 20px;
-    padding: 10px;
+    padding: 7px;
     border-radius: 5px;
     border: none;
     background-color: #4CAF50;
@@ -333,6 +366,46 @@ td:last-child {
     margin: 0 auto;
 }
 
+/*------------------------------TABLA----------------------------------------------------------*/
+
+/* Estilo general de la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: rgb(204, 206, 109);
+    color: #333;
+}
+
+th,
+td {
+    padding: 0.55rem;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #180755;
+}
+
+/* Estilos responsivos */
+@media (max-width: 767px) {
+    table {
+        font-size: 0.9rem;
+    }
+
+    th,
+    td {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    /* Ocultar la primera columna (Ciudad) en modo responsivo */
+    th:nth-child(1),
+    td:nth-child(1) {
+        display: none;
+    }
+}
 
 /*------------------------------PASSWORDS-----------------------------------------------------------*/
 
