@@ -26,10 +26,8 @@ formulario.addEventListener('submit', function (event) {
 	event.preventDefault(); // Evito el envio del formulario por defecto
 
 	const anioNacimiento = nacimiento.value;
-
 	const fechaActual = new Date();
 	const anioActual = fechaActual.getFullYear();
-
 	const edadUsuario = anioActual - anioNacimiento.substring(0, 4);
 
 	if (edadUsuario >= edadMinima) {
