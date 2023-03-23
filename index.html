@@ -41,7 +41,7 @@
     </div>
 
     <br>
-<!--Carrousel de fotos-->
+    <!--Carrousel de fotos-->
     <div class="carousel-container">
         <div class="carousel">
             <div class="carousel-item"><img src="assets/img-inicio/Amsterdam1.jpg" alt="Foto 1"></div>
@@ -64,18 +64,14 @@
 
     <form>
         <label for="ciudad">Ciudad:</label>
-        <select id="ciudad">
-            <option value="Amsterdam">Amsterdam</option>
-            <option value="Barcelona">Barcelona</option>
-            <option value="Berlin">Berlin</option>
-            <option value="Roma">Roma</option>
-            <option value="Londres">Londres</option>
-            <option value="Paris">Paris</option>
-        </select>
 
-        <label for="pasajeros">Cantidad de pasajeros:</label>
+        <div id="ciudades">
+            <p class="letraChica">Seleccione la ciudad: </p>
+        </div>
+
+        <label for="pasajeros" class="pasajeros">Cantidad de pasajeros:</label>
         <input type="number" id="pasajeros" value="1" min="1">
-        <label for="dias">Cantidad de días de estancia:</label>
+        <label for="dias" class="diasDeEstancia">Cantidad de días de estancia:</label>
         <input type="number" id="dias" value="1" min="1">
         <button type="button" id="agregar">Agregar</button>
         <button type="button" id="resetear">Resetear</button>
@@ -205,11 +201,15 @@
         </section>
     </div>
 
+    <script src="./assets/js/carrousel.js"></script>
     <script src="./assets/js/generacionPsw.js"></script>
-    <script src="./assets/js/scriptPrincipal.js"></script>
     <script src="./assets/js/leerMas.js"></script>
     <script src="./assets/js/modoOscuro.js"></script>
-    <script src="./assets/js/carrousel.js"></script>
+    <script src="./assets/js/scriptPrincipal.js"></script>
+
+
+
+
 
 </body>
 

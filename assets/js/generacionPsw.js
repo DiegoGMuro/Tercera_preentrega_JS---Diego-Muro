@@ -21,7 +21,6 @@ formulario.appendChild(enviar);
 document.body.appendChild(formulario);
 
 const resultado = document.getElementById('resultado');
-
 formulario.addEventListener('submit', function (event) {
 	event.preventDefault(); // Evito el envio del formulario por defecto
 
